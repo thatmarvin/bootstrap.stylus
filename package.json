@@ -12,5 +12,5 @@
     , "stylus": "0.24.0"
   }
   , "main": "index"
-  , "engines": { "node": "0.4.x" }
+  , "engines": { "node": ">=0.4.x" }
 }
