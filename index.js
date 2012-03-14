@@ -1,2 +1,9 @@
+// Stolen from https://github.com/shomeya/bootstrap-stylus/blob/v1.4.0-stylus/lib/index.js
 
-module.exports = require('./js/bootstrap');
+exports.path = __dirname;
+
+exports = module.exports = function () {
+  return function(style){
+    style.include(__dirname + '/styl');
+  }
+}
