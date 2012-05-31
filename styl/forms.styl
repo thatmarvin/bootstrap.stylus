@@ -426,7 +426,22 @@ $placeholder($grayLight)
     &+.add-on
       *margin-left: -21px
 
+// Remove all border-radius for inputs with both prepend and append
+.input-prepend.input-append
+  input,
+  select,
+  .uneditable-input
+    $border-radius(0)
 
+  .add-on:first-child,
+  .btn:first-child
+    margin-right: -1px
+    $border-radius(3px 0 0 3px)
+
+  .add-on:last-child,
+  .btn:last-child
+    margin-left: -1px
+    $border-radius(0 3px 3px 0)
 
 
 
