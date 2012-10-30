@@ -81,10 +81,13 @@ $square($size = 5px)
 // Placeholder text
 // -------------------------
 $placeholder($color = $placeholderText)
-  :-moz-placeholder
+  &:-moz-placeholder
+    color: $color !important
+
+  &:-ms-input-placeholder
     color: $color
 
-  ::-webkit-input-placeholder
+  &::-webkit-input-placeholder
     color: $color
 
 
